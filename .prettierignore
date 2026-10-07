@@ -1,3 +1,5 @@
 dist/
 dist-preview/
 package-lock.json
+android/
+ios/

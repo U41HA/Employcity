@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Кофейня у дома</string>
+    <string name="title_activity_main">Кофейня у дома</string>
+    <string name="package_name">ru.employcity.cafecart</string>
+    <string name="custom_url_scheme">ru.employcity.cafecart</string>
+</resources>

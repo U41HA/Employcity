@@ -179,7 +179,7 @@ const tileLabel = (p: Product) => {
   align-items: center;
   justify-content: space-between;
   padding: 8px 12px 9px;
-  color: #fff;
+  color: var(--cafe-on-dark);
 }
 .tile__add {
   display: grid;
@@ -213,10 +213,10 @@ const tileLabel = (p: Product) => {
   padding: 0 6px;
   font-size: 13px;
   font-weight: 900;
-  color: #fff;
+  color: var(--cafe-on-dark);
   background: var(--cafe-red);
   border-radius: 12px;
-  box-shadow: 0 2px 0 #b8322a;
+  box-shadow: 0 2px 0 var(--cafe-red-deep);
 }
 .tile--soldout {
   opacity: 0.55;

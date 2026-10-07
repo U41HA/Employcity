@@ -240,7 +240,7 @@ ion-item-option {
   font: inherit;
   font-weight: 700;
   color: var(--cafe-ink);
-  background: #fff;
+  background: var(--cafe-on-dark);
   border: 2px solid var(--cafe-line);
   border-radius: 12px;
   outline: none;
@@ -262,9 +262,9 @@ ion-item-option {
 }
 .promo__apply {
   height: 44px;
-  color: #fff;
+  color: var(--cafe-on-dark);
   background: var(--cafe-ink);
-  box-shadow: 0 3px 0 #000;
+  box-shadow: 0 3px 0 var(--cafe-press-shadow);
 }
 .promo__apply:disabled {
   opacity: 0.4;

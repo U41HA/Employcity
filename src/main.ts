@@ -14,6 +14,7 @@ import { router } from './app/router'
 import { catalog } from './demo/catalog'
 import { useCartStore } from './modules/cart/application/cart.store'
 
+// единый вид на iOS и Android: у приложения собственная дизайн-система, платформенные стили Material не нужны
 const app = createApp(App).use(IonicVue, { mode: 'ios' }).use(createPinia()).use(router)
 
 // корзину восстанавливаем до первого рендера, чтобы не перетереть её изменениями из каталога

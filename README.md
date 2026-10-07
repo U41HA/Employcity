@@ -11,6 +11,19 @@ npm run check          # типы + линтер + форматирование 
 npm run build:preview  # демо одним HTML-файлом
 ```
 
+## Мобильное приложение (Capacitor)
+
+Веб-сборка (`dist`) упаковывается Capacitor в нативный проект. Папка `android/` уже в репозитории.
+
+```bash
+npm run cap:sync      # собрать веб-часть и скопировать её в нативные проекты
+npm run android       # открыть проект в Android Studio (Run ▶ — запуск на эмуляторе или телефоне)
+npm run android:run   # собрать и запустить на подключённом устройстве из терминала
+```
+
+Нужны Android Studio и JDK 21. Для iOS: `npx cap add ios`, затем Xcode на macOS.
+Хранилище корзины на устройстве — нативный плагин `@capacitor/preferences` (SharedPreferences на Android, UserDefaults на iOS).
+
 ## Архитектура
 
 ```
@@ -36,4 +49,4 @@ src/
 
 ## Стек
 
-Vue 3.5 (Composition API, `<script setup>`), TypeScript (strict), Pinia, Ionic Vue 9, Capacitor Preferences, Vite, Vitest + Vue Test Utils, ESLint (typescript-eslint, eslint-plugin-vue), Prettier, GitHub Actions.
+Vue 3.5 (Composition API, `<script setup>`), TypeScript (strict), Pinia, Ionic Vue 9, Capacitor Preferences, Capacitor 8, Vite, Vitest + Vue Test Utils, ESLint (typescript-eslint, eslint-plugin-vue), Prettier, GitHub Actions.

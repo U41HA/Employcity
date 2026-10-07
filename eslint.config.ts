@@ -3,7 +3,7 @@ import prettier from 'eslint-config-prettier'
 import pluginVue from 'eslint-plugin-vue'
 
 export default defineConfigWithVueTs(
-  { ignores: ['dist/**', 'dist-preview/**', 'coverage/**'] },
+  { ignores: ['dist/**', 'dist-preview/**', 'coverage/**', 'android/**', 'ios/**'] },
   pluginVue.configs['flat/recommended'],
   vueTsConfigs.recommendedTypeChecked,
   {

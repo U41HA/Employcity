@@ -90,15 +90,11 @@ export const useCartStore = defineStore('cart', () => {
   const applyPromo = (value: Promo | null) => {
     promo.value = value
   }
-  const clear = () => {
-    cart.value = emptyCart()
-  }
 
   return {
     cart,
     promo,
     totals,
-    hydrated,
     lastError,
     quantityOf,
     hydrate,
@@ -107,6 +103,5 @@ export const useCartStore = defineStore('cart', () => {
     update,
     remove,
     applyPromo,
-    clear,
   }
 })
